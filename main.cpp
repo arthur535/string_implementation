@@ -23,5 +23,7 @@ int main() {
     std::cout << str2.size() << " " << str2.capacity() << std::endl;
     str2.swap(str1);
     std::cout << "str2 after swap = " << str2 << "\t";
-    std::cout << str2.size() << " " << str2.capacity() << std::endl;}
+    std::cout << str2.size() << " " << str2.capacity() << std::endl;
+    std::cout << str.compare(str2) << std::endl;
+}
 
