@@ -392,3 +392,15 @@ char* ams::string::substr(size_t pos, size_t size) {
     }
     return new_m_buf;
 }
+
+bool ams::string::compare(string& ss) {
+    if (ss.m_size != this -> m_size) {
+        return 0;
+    }
+    for (int i = 0; i < m_size; ++i) {
+        if (m_buf[i] != ss.m_buf[i]) {
+            return 0;
+        }
+    }
+    return 1;
+}
